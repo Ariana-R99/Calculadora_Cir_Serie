@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito en Serie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Circuito en Serie</h1>
+
+        <label for="voltajeT">Voltaje Total (V):</label>
+        <input type="number" id="voltajeT" required>
+
+        <label for="R1">Resistencia 1 (Ω):</label>
+        <input type="number" id="R1" required>
+
+        <label for="R2">Resistencia 2 (Ω):</label>
+        <input type="number" id="R2" required>
+
+        <button onclick="calcularCorriente()">Calcular Corriente</button>
+
+        <button onclick="calcularVoltaje1()">Calcular Voltaje 1</button>
+
+        <button onclick="calcularVoltaje2()">Calcular Voltaje 2</button>
+
+        <button onclick="calcularPotencia1()">Calcular Potencia 1</button>
+
+        <button onclick="calcularPotencia2()">Calcular Potencia 2</button>
+
+        <div id="resultado1">
+            <p>Corriente: <span id="corriente"></span> A</p>
+        </div>
+
+        <div id="resultado2">
+            <p>Voltaje 1: <span id="voltaje1"></span> V</p>
+        </div>
+
+        <div id="resultado3">
+            <p>Voltaje 2: <span id="voltaje2"></span> V</p>
+        </div>
+
+        <div>
+            <p>La potencia que disipa la primera resistencia es: <span id="potencia1"></span> W</p>
+        </div>
+
+        <div>
+            <p>La potencia que disipa la segunda resistencia es: <span id="potencia2"></span> W</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
